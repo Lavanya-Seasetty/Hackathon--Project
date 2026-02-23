@@ -8,14 +8,15 @@ export default defineConfig({
   // fullyParallel: true,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [ 
-    ['html'], 
-   ['allure-playwright', {
-    detail: true,
-    outputFolder: 'allure-results',
-    suitetitle: false
-   }],
-  ],
+  reporter: 'html',
+  // reporter: [ 
+  //   ['html'], 
+  //  ['allure-playwright', {
+  //   detail: true,
+  //   outputFolder: 'allure-results',
+  //   suitetitle: false
+  //  }],
+  // ],
   retries: 2,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 2 : undefined, 
@@ -41,10 +42,10 @@ export default defineConfig({
     //   name: 'chromium',
     //   use: { ...devices['Desktop Chrome'] },
     // },
-    {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    },
+    // {
+    //   name: 'Microsoft Edge',
+    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    // },
 
     // {
     //   name: 'firefox',
