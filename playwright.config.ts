@@ -8,7 +8,14 @@ export default defineConfig({
   // fullyParallel: true,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [ 
+    ['html'], 
+   ['allure-playwright', {
+    detail: true,
+    outputFolder: 'allure-results',
+    suitetitle: false
+   }],
+  ],
   retries: 2,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 2 : undefined, 

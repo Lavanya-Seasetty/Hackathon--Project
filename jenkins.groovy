@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/jitendra-jitu/Hackathon-Coursera'
+                    url: 'https://github.com/Lavanya-Seasetty/Hackathon--Project'
             }
         }
  
