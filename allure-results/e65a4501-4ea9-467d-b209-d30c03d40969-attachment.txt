@@ -1,1 +1,0 @@
-[LOG]: Starting Test Suite 4 - Coursera Plus Pricing Validation Tests
