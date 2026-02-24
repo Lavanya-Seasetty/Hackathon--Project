@@ -8,7 +8,7 @@ export default defineConfig({
   // fullyParallel: true,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  // reporter: 'html',
+  //  reporter: 'html',
   reporter: [ 
     ['html'], 
    ['allure-playwright', {

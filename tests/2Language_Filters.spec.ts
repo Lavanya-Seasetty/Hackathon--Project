@@ -31,7 +31,6 @@ test('@sanity Test 2.2 - Iterate Through Languages and List Available Levels', a
 
   const count = await languageOptions.count();
   expect(count).toBeGreaterThan(0);
-  // expect(count).toBeGreaterThan(-1);
 
   Logger.log(`Total available language filters found: ${count}`);
   const view = page.getByRole('button', { name: 'View' });
